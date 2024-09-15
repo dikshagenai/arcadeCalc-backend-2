@@ -5,7 +5,8 @@ const fs = require("fs");
 // To get all the notifications. COMPLETED!
 router.get("/getNotifications", async (req, res) => {
     try {
-        var notifications = require("../data/Notifications/Notifications.json")
+        // var notifications = require("../data/Notifications/Notifications.json")
+        var notifications = fs.readFileSync("./data/Notifications/Notifications.json", "utf8");
         res.status(200).json({ Notifications: notifications })
     } catch (error) {
         res.status(404).json(error.message)
