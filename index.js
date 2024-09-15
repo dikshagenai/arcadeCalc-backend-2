@@ -43,6 +43,19 @@ app.use("/api/users", require("./routes/users.js"));
 
 
 
+// * Reload the website every 5 minutes. Replace with your Render URL.
+const url = `https://arcadecalc-backend-2.onrender.com`; // Replace with your Render URL
+const interval = 300000; // Interval in milliseconds (5 minutes)
+
+// Reloader Function
+function reloadWebsite() {
+    axios.get(url)
+}
+
+setInterval(reloadWebsite, interval);
+
+
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
