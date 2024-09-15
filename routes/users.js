@@ -45,5 +45,15 @@ router.post('/addUser', async (req, res) => {
 })
 
 
+router.get('/fetchUsers', async (req, res) => {
+    try {
+        var users = require("../data/users/users.json")
+        res.status(200).send(users)
+    } catch (error) {
+        res.status(500).send(error.message)
+    }
+})
+
+
 
 module.exports = router;
