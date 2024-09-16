@@ -22,7 +22,8 @@ const fetchUsers = async () => {
 
 router.get('/countUsers', async (req, res) => {
     try {
-        var users = JSON.parse(fs.readFileSync("./data/users/usersCount.txt", "utf8"));
+        console.log('inside try')
+        var users = fs.readFileSync("./data/users/usersCount.txt", "utf8");
         res.status(200).json(users)
     } catch (error) {
         res.status(500).send(error.message)
@@ -66,5 +67,4 @@ router.post('/addUser', async (req, res) => {
 
 
 
-module.exports = router;
-module.exports = fetchUsers;
+module.exports = {fetchUsers, router};

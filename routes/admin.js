@@ -5,9 +5,8 @@ const path = require('path');
 const jwt = require('jsonwebtoken');
 
 // ^ FUNCTIONS IMPORT
-const Notification = require('./notifications')
-
-const fetchUsers = require('./users');
+const { Notification } = require('./notifications')
+const { fetchUsers } = require('./users');
 
 
 // ^ Load admin credentials from JSON file

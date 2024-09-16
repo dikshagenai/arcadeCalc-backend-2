@@ -70,5 +70,4 @@ router.get("/getNotifications", async (req, res) => {
 
 
 
-module.exports = Notification
-module.exports = router
+module.exports = {Notification, router}
