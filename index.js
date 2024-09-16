@@ -40,6 +40,8 @@ app.use("/api/upload", require("./routes/uploadData.js")) //! Not working...
 
 // users
 app.use("/api/users", require("./routes/users.js"));
+app.use("/api/notifications", require("./routes/notifications.js"))
+
 
 // admin panel
 app.use("/admin", require("./routes/admin.js"));
