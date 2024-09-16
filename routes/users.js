@@ -3,6 +3,23 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
+
+
+// FUNCTIONS------------
+
+const fetchUsers = async () => {
+    try {
+        var users = JSON.parse(fs.readFileSync("./data/users/users.json", "utf8"));
+        return { status: 200, data: users }
+    } catch (error) {
+        return { status: 500, error: error.message, data: null }
+    }
+}
+
+
+
+// ROUTES---------------
+
 router.get('/countUsers', async (req, res) => {
     try {
         var users = JSON.parse(fs.readFileSync("./data/users/usersCount.txt", "utf8"));
@@ -45,16 +62,9 @@ router.post('/addUser', async (req, res) => {
 })
 
 
-router.get('/fetchUsers', async (req, res) => {
-    try {
-        // var users = require("../data/users/users.json")
-        var users = JSON.parse(fs.readFileSync("./data/users/users.json", "utf8"));
-        res.status(200).json(users)
-    } catch (error) {
-        res.status(500).send(error.message)
-    }
-})
+
 
 
 
 module.exports = router;
+module.exports = fetchUsers;

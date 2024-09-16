@@ -34,7 +34,6 @@ app.get('/', async (req, res) => {
 });
 
 // MORE ROUTES
-app.use("/api/notifications", require("./routes/notifications.js"))
 app.use("/api/download", require("./routes/downloadData.js"))
 app.use("/api/upload", require("./routes/uploadData.js")) //! Not working...
 
@@ -42,6 +41,8 @@ app.use("/api/upload", require("./routes/uploadData.js")) //! Not working...
 // users
 app.use("/api/users", require("./routes/users.js"));
 
+// admin panel
+app.use("/admin", require("./routes/admin.js"));
 
 
 // * Reload the website every 5 minutes. Replace with your Render URL.
