@@ -48,7 +48,7 @@ router.post('/addUser', async (req, res) => {
 router.get('/fetchUsers', async (req, res) => {
     try {
         // var users = require("../data/users/users.json")
-        var users = fs.readFileSync("./data/users/users.json", "utf8");
+        var users = JSON.parse(fs.readFileSync("./data/users/users.json", "utf8"));
         res.status(200).json(users)
     } catch (error) {
         res.status(500).send(error.message)
