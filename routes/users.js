@@ -5,7 +5,7 @@ const path = require('path');
 
 router.get('/countUsers', async (req, res) => {
     try {
-        var users = fs.readFileSync("./data/users/usersCount.txt", "utf8");
+        var users = JSON.parse(fs.readFileSync("./data/users/usersCount.txt", "utf8"));
         res.status(200).json(users)
     } catch (error) {
         res.status(500).send(error.message)
