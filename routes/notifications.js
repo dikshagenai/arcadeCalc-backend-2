@@ -61,7 +61,7 @@ class Notification {
 router.get("/getNotifications", async (req, res) => {
     try {
         // var notifications = require("../data/Notifications/Notifications.json")
-        const notifications = await Notification().fetchNotifications()
+        const notifications = await new Notification().fetchNotifications()
         res.status(200).json({ Notifications: notifications })
     } catch (error) {
         res.status(404).json(error.message)
