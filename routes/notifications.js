@@ -1,4 +1,6 @@
 const fs = require("fs");
+const router = express.Router();
+const express = require("express");
 
 // FUNCTIONS----------------------------------------------------------------
 
@@ -39,7 +41,7 @@ class Notification {
     }
 
 
-    async overwriteNotifications(notifications)  {
+    async overwriteNotifications(notifications) {
         try {
             // let notifications = req.body.data;
             fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notifications, null, 4));
@@ -55,6 +57,18 @@ class Notification {
 }
 
 
+// ^ ROUTES ---------------
+router.get("/getNotifications", async (req, res) => {
+    try {
+        // var notifications = require("../data/Notifications/Notifications.json")
+        const notifications = await Notification().fetchNotifications()
+        res.status(200).json({ Notifications: notifications })
+    } catch (error) {
+        res.status(404).json(error.message)
+    }
+})
+
 
 
 module.exports = Notification
+module.exports = router
