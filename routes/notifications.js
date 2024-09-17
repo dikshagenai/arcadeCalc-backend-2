@@ -23,7 +23,8 @@ class Notification {
         try {
             notifications["time"] = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
             var notificationsJSON = await JSON.parse(fs.readFileSync("./data/Notifications/Notifications.json", "utf8"));
-            var finalOutput = JSON.stringify(Object.assign(notifications, notificationsJSON));
+            var finalOutput = JSON.stringify(Object.assign({ [notifications.key]: notifications }, notificationsJSON));
+            console.log(finalOutput)
             fs.writeFileSync("./data/Notifications/Notifications.json", finalOutput, 'utf8');
 
             return { status: 200, message: "Notifications added successfully" };
