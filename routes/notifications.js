@@ -28,7 +28,7 @@ class Notification {
             // let redirectTo = notifications.redirectTo;
             // let key = notifications.key;
             // let time = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }); // Convert to IST
-            notifications[time] = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+            notifications["time"] = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
 
 
@@ -36,6 +36,7 @@ class Notification {
 
 
             var notificationsJSON = await JSON.parse(fs.readFileSync("./data/Notifications/Notifications.json", "utf8"));
+            console.log(typeof notificationsJSON)
 
             notificationsJSON.unshift(notifications)
 
