@@ -72,8 +72,7 @@ router.post('/checkLogin', authMiddleware, async (req, res) => {
 
 // * Endpoint 2: Change password
 router.post('/changePassword', authMiddleware, async (req, res) => {
-    const newPassword = req.body.newPassword;
-    const oldPassword = req.body.oldPassword;
+    const { newPassword, oldPassword } = req.body;
 
     if (!newPassword || !oldPassword) {
         return res.status(400).json({ message: 'New and old passwords are required', success: false });
@@ -113,8 +112,8 @@ router.post('/fetchNotifications', authMiddleware, async (req, res) => {
 // * Endpoint 4: Add Notification
 router.post('/addNotification', authMiddleware, async (req, res) => {
     try {
-        const notifications = req.body.data;
-        const output = await new Notification().addNotifications(notifications);
+        const { data } = req.body;
+        const output = await new Notification().addNotifications(data);
         res.status(output.status).json(output)
     } catch (error) {
         res.status(500).json(error)
@@ -125,8 +124,8 @@ router.post('/addNotification', authMiddleware, async (req, res) => {
 // * Endpoint 5: Overwrite Notification
 router.post('/overwriteNotification', authMiddleware, async (req, res) => {
     try {
-        const notifications = req.body.data;
-        const output = await new Notification().overwriteNotifications(notifications);
+        const { data } = req.body;
+        const output = await new Notification().overwriteNotifications(data);
         res.status(output.status).json(output)
     } catch (error) {
         res.status(500).json(error)
