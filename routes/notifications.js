@@ -42,7 +42,10 @@ class Notification {
 
             // var finalOutput = JSON.stringify(Object.assign(data, users));
 
-            fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notificationsJSON), 'utf-8');
+            fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notificationsJSON), 'utf-8', (err) => {
+                console.log(err);
+                return { status: 402, message: err.message, error: err, success: false };
+            });
             console.log('write loda lhsan')
 
             return { status: 200, message: "Notifications added successfully" };

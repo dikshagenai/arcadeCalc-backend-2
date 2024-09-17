@@ -1,1 +1,82 @@
-{"9c0e0806-3a64-4aff-acfa-91030337b4ef":{"name":"Jinay Shah","publicUrl":"https://www.cloudskillsboost.google/public_profiles/9c0e0806-3a64-4aff-acfa-91030337b4ef","normalPoints":0,"swagsWithoutFacilitator":"None","facilitatorPoints":0,"swagsWithFacilitator":"None"},"da63a262-1446-4dcb-a71f-655df5247cd9":{"name":"Deepanshu Parjapati","publicUrl":"https://www.cloudskillsboost.google/public_profiles/da63a262-1446-4dcb-a71f-655df5247cd9","normalPoints":0,"swagsWithoutFacilitator":"None","facilitatorPoints":0,"swagsWithFacilitator":"None"},"1e04a521-d0a3-45c7-8edb-6134e6309171":{"name":"Deepanshu QuickLabs","publicUrl":"https://www.cloudskillsboost.google/public_profiles/1e04a521-d0a3-45c7-8edb-6134e6309171","normalPoints":30.5,"swagsWithoutFacilitator":"Advanced","facilitatorPoints":39.5,"swagsWithFacilitator":"Advanced"},"435bb516-c33f-49d7-8a24-0bb044f5577d":{"name":"Ada Wong","publicUrl":"https://www.cloudskillsboost.google/public_profiles/435bb516-c33f-49d7-8a24-0bb044f5577d","normalPoints":50,"swagsWithoutFacilitator":"Premium","facilitatorPoints":69,"swagsWithFacilitator":"Premium Plus"},"aea223d7-aa1e-47a3-b437-1e2c71281c8b":{"name":"Deepanshu Btechky","publicUrl":"https://www.cloudskillsboost.google/public_profiles/aea223d7-aa1e-47a3-b437-1e2c71281c8b","normalPoints":59,"swagsWithoutFacilitator":"Premium","facilitatorPoints":78,"swagsWithFacilitator":"Premium Plus"},"11553bb6-4be4-44ff-8533-c202e3b9d814":{"name":"Luis Serra","publicUrl":"https://www.cloudskillsboost.google/public_profiles/11553bb6-4be4-44ff-8533-c202e3b9d814","normalPoints":1,"swagsWithoutFacilitator":"None","facilitatorPoints":1,"swagsWithFacilitator":"None"},"1f106c54-03a1-4e2a-9c27-9031306d7459":{"name":"Kunal GOOGLEUSER","publicUrl":"https://www.cloudskillsboost.google/public_profiles/1f106c54-03a1-4e2a-9c27-9031306d7459","normalPoints":0.5,"swagsWithoutFacilitator":"None","facilitatorPoints":0.5,"swagsWithFacilitator":"None"},"48edd1d5-f53c-455f-b036-39e130c4f166":{"name":"Jack Krauser","publicUrl":"https://www.cloudskillsboost.google/public_profiles/48edd1d5-f53c-455f-b036-39e130c4f166","normalPoints":0,"swagsWithoutFacilitator":"None","facilitatorPoints":0,"swagsWithFacilitator":"None"},"6d9e1d6c-e94a-4f1b-ba71-59902137f0b7":{"name":"Osmund Saddler","publicUrl":"https://www.cloudskillsboost.google/public_profiles/6d9e1d6c-e94a-4f1b-ba71-59902137f0b7","normalPoints":0,"swagsWithoutFacilitator":"None","facilitatorPoints":0,"swagsWithFacilitator":"None"},"46b82216-b59b-4138-84fe-278fee4d927a":{"name":"Gaurav Jain","publicUrl":"https://www.cloudskillsboost.google/public_profiles/46b82216-b59b-4138-84fe-278fee4d927a","normalPoints":32,"swagsWithoutFacilitator":"Advanced","facilitatorPoints":51,"swagsWithFacilitator":"Premium"}}
+{
+    "9c0e0806-3a64-4aff-acfa-91030337b4ef": {
+        "name": "Jinay Shah",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/9c0e0806-3a64-4aff-acfa-91030337b4ef",
+        "normalPoints": 0,
+        "swagsWithoutFacilitator": "None",
+        "facilitatorPoints": 0,
+        "swagsWithFacilitator": "None"
+    },
+    "da63a262-1446-4dcb-a71f-655df5247cd9": {
+        "name": "Deepanshu Parjapati",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/da63a262-1446-4dcb-a71f-655df5247cd9",
+        "normalPoints": 0,
+        "swagsWithoutFacilitator": "None",
+        "facilitatorPoints": 0,
+        "swagsWithFacilitator": "None"
+    },
+    "1e04a521-d0a3-45c7-8edb-6134e6309171": {
+        "name": "Deepanshu QuickLabs",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/1e04a521-d0a3-45c7-8edb-6134e6309171",
+        "normalPoints": 30.5,
+        "swagsWithoutFacilitator": "Advanced",
+        "facilitatorPoints": 39.5,
+        "swagsWithFacilitator": "Advanced"
+    },
+    "435bb516-c33f-49d7-8a24-0bb044f5577d": {
+        "name": "Ada Wong",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/435bb516-c33f-49d7-8a24-0bb044f5577d",
+        "normalPoints": 50,
+        "swagsWithoutFacilitator": "Premium",
+        "facilitatorPoints": 69,
+        "swagsWithFacilitator": "Premium Plus"
+    },
+    "aea223d7-aa1e-47a3-b437-1e2c71281c8b": {
+        "name": "Deepanshu Btechky",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/aea223d7-aa1e-47a3-b437-1e2c71281c8b",
+        "normalPoints": 59,
+        "swagsWithoutFacilitator": "Premium",
+        "facilitatorPoints": 78,
+        "swagsWithFacilitator": "Premium Plus"
+    },
+    "11553bb6-4be4-44ff-8533-c202e3b9d814": {
+        "name": "Luis Serra",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/11553bb6-4be4-44ff-8533-c202e3b9d814",
+        "normalPoints": 1,
+        "swagsWithoutFacilitator": "None",
+        "facilitatorPoints": 1,
+        "swagsWithFacilitator": "None"
+    },
+    "1f106c54-03a1-4e2a-9c27-9031306d7459": {
+        "name": "Kunal GOOGLEUSER",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/1f106c54-03a1-4e2a-9c27-9031306d7459",
+        "normalPoints": 0.5,
+        "swagsWithoutFacilitator": "None",
+        "facilitatorPoints": 0.5,
+        "swagsWithFacilitator": "None"
+    },
+    "48edd1d5-f53c-455f-b036-39e130c4f166": {
+        "name": "Jack Krauser",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/48edd1d5-f53c-455f-b036-39e130c4f166",
+        "normalPoints": 0,
+        "swagsWithoutFacilitator": "None",
+        "facilitatorPoints": 0,
+        "swagsWithFacilitator": "None"
+    },
+    "6d9e1d6c-e94a-4f1b-ba71-59902137f0b7": {
+        "name": "Osmund Saddler",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/6d9e1d6c-e94a-4f1b-ba71-59902137f0b7",
+        "normalPoints": 0,
+        "swagsWithoutFacilitator": "None",
+        "facilitatorPoints": 0,
+        "swagsWithFacilitator": "None"
+    },
+    "46b82216-b59b-4138-84fe-278fee4d927a": {
+        "name": "Gaurav Jain",
+        "publicUrl": "https://www.cloudskillsboost.google/public_profiles/46b82216-b59b-4138-84fe-278fee4d927a",
+        "normalPoints": 32,
+        "swagsWithoutFacilitator": "Advanced",
+        "facilitatorPoints": 51,
+        "swagsWithFacilitator": "Premium"
+    }
+}
