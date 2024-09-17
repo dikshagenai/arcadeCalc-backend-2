@@ -112,11 +112,24 @@ router.post('/fetchNotifications', authMiddleware, async (req, res) => {
 // * Endpoint 4: Add Notification
 router.post('/addNotification', authMiddleware, async (req, res) => {
     try {
+        console.log('endpoint hit hua ')
         const { data } = req.body;
+        console.log('are body me se data bhi aaya kuch')
+        console.log(data)
         const output = await new Notification().addNotifications(data);
+        console.log("function se ye aaya h apne paas")
+        console.log(output)
         res.status(output.status).json(output)
+        console.log("ye h output ")
+        console.log(output)
     } catch (error) {
-        res.status(500).json(error)
+        console.log("mai mc endpoint hu error throw kruga 500 ka ")
+        console.log(`ye wala error ${error}`)
+        console.log(`${error.message}`)
+        res.status(500).json({ error })
+        console.log('mc endpoint ne error kiya throw')
+
+
     }
 })
 
@@ -128,7 +141,7 @@ router.post('/overwriteNotification', authMiddleware, async (req, res) => {
         const output = await new Notification().overwriteNotifications(data);
         res.status(output.status).json(output)
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json({ error })
     }
 })
 
@@ -147,7 +160,7 @@ router.post('/fetchUsers', authMiddleware, async (req, res) => {
             return;
         }
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json({ error })
     }
 })
 

@@ -22,7 +22,6 @@ const fetchUsers = async () => {
 
 router.get('/countUsers', async (req, res) => {
     try {
-        console.log('inside try')
         var users = fs.readFileSync("./data/users/usersCount.txt", "utf8");
         res.status(200).json(users)
     } catch (error) {
