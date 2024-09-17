@@ -39,8 +39,8 @@ class Notification {
             notificationsJSON.unshift({ imageUrl, content, redirectTo, key, time });
             console.log('read notifications json')
 
-            // fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notificationsJSON, null, 4));
-            fs.writeFileSync("./data/notifications/Notifications.json", 'tmp')
+            fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notificationsJSON, null, 4), 'utf-8');
+            // fs.writeFileSync("./data/notifications/Notifications.json", 'tmp')
             console.log('write loda lhsan')
 
             return { status: 200, message: "Notifications added successfully" };
