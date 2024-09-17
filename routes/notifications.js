@@ -23,24 +23,25 @@ class Notification {
         try {
             console.log('inside try of function')
             // let notifications = req.body.data;
-            let imageUrl = notifications.imageUrl;
-            let content = notifications.content;
-            let redirectTo = notifications.redirectTo;
-            let key = notifications.key;
-            let time = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }); // Convert to IST
+            // let imageUrl = notifications.imageUrl;
+            // let content = notifications.content;
+            // let redirectTo = notifications.redirectTo;
+            // let key = notifications.key;
+            // let time = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }); // Convert to IST
+            notifications[time] = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+
+
 
             console.log('successfully take out values imageUrl loda lhsan')
 
 
             var notificationsJSON = await JSON.parse(fs.readFileSync("./data/Notifications/Notifications.json", "utf8"));
 
-            console.log('read notifications json ')
+            notificationsJSON.unshift(notifications)
 
-            notificationsJSON.unshift({ imageUrl, content, redirectTo, key, time });
-            console.log('read notifications json')
+            // var finalOutput = JSON.stringify(Object.assign(data, users));
 
-            fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notificationsJSON, null, 4), 'utf-8');
-            // fs.writeFileSync("./data/notifications/Notifications.json", 'tmp')
+            fs.writeFileSync("./data/notifications/Notifications.json", JSON.stringify(notificationsJSON), 'utf-8');
             console.log('write loda lhsan')
 
             return { status: 200, message: "Notifications added successfully" };
