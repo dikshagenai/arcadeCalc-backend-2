@@ -61,6 +61,15 @@ router.post('/login', async (req, res) => {
     }
 });
 
+
+// * EndPoint 1-2: Check user login;
+router.post('/checkLogin', authMiddleware, async (req, res) => {
+    res.status(200).json({ message: 'User is logged in', success: true });
+})
+
+
+
+
 // * Endpoint 2: Change password
 router.post('/changePassword', authMiddleware, async (req, res) => {
     const newPassword = req.body.newPassword;
