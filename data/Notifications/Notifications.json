@@ -1,26 +1,26 @@
-[
-    {
+{
+    "2024-SEP-09-TB": {
         "imageUrl": "https://i.ibb.co/RhTqyWK/sep-week-1.png",
         "content": "All Trivia Badges are live now for this month.",
         "redirectTo": "https://go.cloudskillsboost.google/arcade",
         "key": "2024-SEP-09-TB"
     },
-    {
+    "2024-SEP-02-TB": {
         "imageUrl": "https://i.ibb.co/RhTqyWK/sep-week-1.png",
         "content": "Trivia Badge for week 1 is live now!",
         "redirectTo": "https://go.cloudskillsboost.google/arcade",
         "key": "2024-SEP-02-TB"
     },
-    {
+    "2024-SEP-02-TB-(2)": {
         "imageUrl": "https://i.ibb.co/rFMNBjn/Sep-week2.png",
         "content": "September Base Camp Arcade Badge is live now!",
         "redirectTo": "https://go.cloudskillsboost.google/arcade",
         "key": "2024-SEP-02-TB-(2)"
     },
-    {
+    "2024-SEP-02-GB": {
         "imageUrl": "https://i.ibb.co/YfRxb13/Sep-base-Camp.png",
         "content": "All Game Badges for the month of september are live now!",
         "redirectTo": "https://go.cloudskillsboost.google/arcade",
         "key": "2024-SEP-02-GB"
     }
-]
+}
