@@ -21,23 +21,14 @@ class Notification {
 
     async addNotifications(notifications) {
         try {
-
             notifications["time"] = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
             var notificationsJSON = await JSON.parse(fs.readFileSync("./data/Notifications/Notifications.json", "utf8"));
-
-            var finalOutput = Object.assign(notificationsJSON, notifications);
-
-            fs.writeFileSync("./data/Notifications/Notifications.json", JSON.stringify(finalOutput), 'utf-8', (err) => {
-                console.log(err);
-                return { status: 402, message: err.message, error: err, success: false };
-            });
-            console.log('write loda lhsan')
+            var finalOutput = JSON.stringify(Object.assign(notifications, notificationsJSON));
+            fs.writeFileSync("./data/Notifications/Notifications.json", finalOutput, 'utf8');
 
             return { status: 200, message: "Notifications added successfully" };
 
         } catch (error) {
-            console.log('function bkl ne kiya erroe throw')
-
             throw new Error({ status: 500, message: "Unable to add notifications.", error: error.message })
         }
     }
