@@ -27,7 +27,7 @@ class Notification {
 
             var finalOutput = JSON.stringify(Object.assign(notificationsJSON, notifications));
 
-            fs.writeFileSync("./data/notifications/notifications.json", JSON.stringify(finalOutput), 'utf-8', (err) => {
+            fs.writeFileSync("./data/Notifications/notifications.json", JSON.stringify(finalOutput), 'utf-8', (err) => {
                 console.log(err);
                 return { status: 402, message: err.message, error: err, success: false };
             });
@@ -46,7 +46,7 @@ class Notification {
     async overwriteNotifications(notifications) {
         try {
             // let notifications = req.body.data;
-            fs.writeFileSync("./data/notifications/notifications.json", JSON.stringify(notifications, null, 4));
+            fs.writeFileSync("./data/Notifications/notifications.json", JSON.stringify(notifications, null, 4));
             return { status: 200, message: "Notifications overwrite successfully!" }
         } catch (error) {
             return { status: 500, message: "Unable to delete notifications file.", error: error.message }
