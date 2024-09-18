@@ -54,6 +54,7 @@ const interval = 300000; // Interval in milliseconds (5 minutes)
 // Reloader Function
 function reloadWebsite() {
     axios.get(url)
+    fs.writeFileSync('./data/something.txt', Math.random().toString(), 'utf8');
 }
 
 setInterval(reloadWebsite, interval);
