@@ -50,7 +50,9 @@ router.post('/addUser', async (req, res) => {
         
         var users = await JSON.parse(fs.readFileSync("./data/users/users.json", "utf8"));
         var { data } = req.body;
-        var finalOutput = JSON.stringify(Object.assign(data, users));
+        // var finalOutput = JSON.stringify(Object.assign(data, users));
+        var finalOutput = JSON.stringify({...users, ...data});
+        
         fs.writeFileSync('./data/users/users.json', finalOutput, "utf8");
         res.status(200).send("User added successfully!");
 
