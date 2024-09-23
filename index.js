@@ -5,6 +5,7 @@ const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 5001;
 const axios = require('axios');
+const { SERVER, DATABASE } = require('./buildTime.js');
 
 app.use(express.json());
 app.use(cors());
@@ -30,18 +31,13 @@ app.use("/admin", require("./routes/admin.js"));
 
 // * Reload the website every 5 minutes. Replace with your Render URL.
 
-// primary account
-// const url = `https://arcadecalc-backend-2.onrender.com`; 
-
-// secondary account
-const url = `https://arcadecalc-backend-2-secondary.onrender.com`
 
 
 const interval = 300000; // Interval in milliseconds (5 minutes)
 
 // Reloader Function
 function reloadWebsite() {
-    axios.get(url)
+    axios.get(DATABASE)
     fs.writeFileSync('./data/something.txt', Math.random().toString(), 'utf8');
 }
 
