@@ -3,30 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 const cors = require("cors");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const axios = require('axios');
 
 app.use(express.json());
 app.use(cors());
-
-
-// notifications will be stored here
-// session storage ko use karke store karna h ki ye banda site pe visit kiya h
-// contact ko bhi yehi store karna h
-// notifications modify bhi yehi hogi
-// 
-// main - before deploying new data ek endpoint hoga - '/getAllData' download all data
-
-
-// NOTIFICATIONS
-
-// set new notifications
-// delete notifications
-// edit pure json
-
-
-// CONTACT
-
 
 
 app.get('/', async (req, res) => {
@@ -48,7 +29,14 @@ app.use("/admin", require("./routes/admin.js"));
 
 
 // * Reload the website every 5 minutes. Replace with your Render URL.
-const url = `https://arcadecalc-backend-2.onrender.com`; // Replace with your Render URL
+
+// primary account
+// const url = `https://arcadecalc-backend-2.onrender.com`; 
+
+// secondary account
+const url = `https://arcadecalc-backend-2-secondary.onrender.com`
+
+
 const interval = 300000; // Interval in milliseconds (5 minutes)
 
 // Reloader Function
